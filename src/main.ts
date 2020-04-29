@@ -5,3 +5,5 @@ function hello(name: string) {
 function main() {
   hello("world");
 }
+
+main();
