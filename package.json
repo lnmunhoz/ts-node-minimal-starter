@@ -23,9 +23,7 @@
   },
   "release-it": {
     "npm": false,
-    "github": {
-      "release": true
-    }
+    "github": false
   },
   "license": "MIT"
 }
