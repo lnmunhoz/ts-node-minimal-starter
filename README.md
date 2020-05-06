@@ -17,7 +17,11 @@ yarn
 ### 3. Development
 
 ```
+## For a simple executable
 yarn dev
+
+## For a simple server
+yarn server:dev
 ```
 
 That's it! Now go and build something useful :)

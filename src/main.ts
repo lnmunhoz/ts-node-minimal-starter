@@ -1,9 +1,9 @@
-function hello(name: string) {
-  console.log("hello ", name);
+export function getHelloMessage(name: string) {
+  return `hello ${name}`;
 }
 
 function main() {
-  hello("world");
+  getHelloMessage("world");
 }
 
 main();

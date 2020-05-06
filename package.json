@@ -1,10 +1,31 @@
 {
   "scripts": {
-    "dev": "tsnd ./src/main.ts"
+    "dev": "tsnd ./src/main.ts",
+    "server:dev": "env-cmd -f .env.development tsnd ./src/server.ts",
+    "release": "release-it",
+    "test": "jest"
   },
   "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/jest": "^25.2.1",
+    "@types/morgan": "^1.9.0",
+    "env-cmd": "^10.1.0",
+    "jest": "25",
+    "release-it": "^13.5.8",
+    "ts-jest": "^25.4.0",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.8.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "release-it": {
+    "npm": false,
+    "github": {
+      "release": true
+    }
+  },
+  "license": "MIT"
 }
